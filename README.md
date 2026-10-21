@@ -4,6 +4,12 @@
 
 > 非商业粉丝项目。界面贴图版权归 Blizzard Entertainment，详见 [NOTICE.md](NOTICE.md)。代码为 MIT。
 
+![悬浮聊天窗](docs/screenshots/overlay.png)
+
+![集合石主窗](docs/screenshots/main.png)
+
+![个人信息与设置](docs/screenshots/settings.png)
+
 ## 功能
 
 - **透明悬浮窗**：无边框、置顶、可拖动（位置持久化）、托盘常驻
