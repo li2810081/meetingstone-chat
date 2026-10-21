@@ -1,0 +1,15 @@
+# 依赖与构建产物
+node_modules/
+app/node_modules/
+app/room-stack.cjs
+relay/node_modules/
+dist/
+out/
+
+# 素材已随仓库分发（见 NOTICE.md），如需重新生成可运行 tools/prepare-assets.py
+
+# 日志与本地状态
+*.log
+run.log
+install*.log
+*.tsbuildinfo

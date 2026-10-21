@@ -1,0 +1,8 @@
+{
+  "name": "stone-relay",
+  "version": "0.1.0",
+  "description": "集合石极简 WebSocket 房间中继（只转发，不解密）",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "ws": "8.22.0" }
+}
