@@ -1,7 +1,7 @@
 {
   "name": "meetingstone-chat",
   "productName": "MeetingStone Chat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "集合石 · 魔兽风透明聊天悬浮窗（Electron）—— 局域网 + 公共中继加密房间",
   "main": "main.js",
   "license": "MIT",

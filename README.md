@@ -23,6 +23,7 @@
 - **房间通信**：房间码 → scrypt 派生密钥 → AES-256-GCM 封包；局域网 UDP 广播 + 公共 Nostr 中继
 - **密语**：X25519 ECDH + HKDF + AES-256-GCM，点对点
 - **任务同步 / 就位确认**：经加密房间通道广播
+- **队长操作**：踢出成员、转让队长、解散任务、删除任务
 
 ## 快速开始
 
@@ -98,7 +99,7 @@ docs/ARCHITECTURE.md  架构与协议说明
 
 ## 版本
 
-v0.1.0 — 见 [CHANGELOG.md](CHANGELOG.md)
+v0.2.0 — 见 [CHANGELOG.md](CHANGELOG.md)
 
 ## 许可
 

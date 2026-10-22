@@ -2374,6 +2374,24 @@ if (qp.get("cmd")) runCommand("/" + qp.get("cmd"));
 if (qp.get("f10") === "1") showOvInput();
 if (qp.get("ctx")) showCtxMenu(360, 520, qp.get("ctx"));
 if (qp.get("cmdmenu") === "1") toggleCmdMenu();
+if (qp.get("autojoin") === "1") {
+  setTimeout(function () {
+    const q = S.quests.find(function (x) { return !x.joined && !x.done; });
+    if (q) joinQuest(q);
+  }, 22000);
+}
+if (qp.get("autoleave") === "1") {
+  setTimeout(function () {
+    const q = S.quests.find(function (x) { return x.joined && !x.done; });
+    if (q) {
+      q.joined = false;
+      q.members = q.members.filter(function (m) { return m !== ME; });
+      if (!q.members.length) q.owner = null;
+      save(); broadcastTask(q); renderLists(); renderFoot();
+      sysChat("party", ME + " 退出了任务「" + q.title + "」");
+    }
+  }, 32000);
+}
 if (MODE === "overlay" && qp.get("name")) { S.profile.name = qp.get("name"); }
 if (MODE === "overlay" && qp.get("cls")) {
   S.profile.cls = qp.get("cls");
